@@ -7,4 +7,4 @@ img { display: inline-block; max-width: 100%; }
 
 #posters { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--gap); padding: var(--gap); }
 #posters .poster {}
-#posters .poster img { aspect-ratio: 1/1; }
+#posters .poster img { aspect-ratio: 1/1; object-fit: cover; }
