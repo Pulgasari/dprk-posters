@@ -1,7 +1,7 @@
 function closePosterViews(){
 
   // Close All Open PosterViews
-  document.getElementsByClassName('posterView').forEach( el => {  el.outerHTML = '' } );
+  document.querySelectorAll('.posterView').forEach( el => {  el.outerHTML = '' } );
 
 }
 function openPosterView(id){
