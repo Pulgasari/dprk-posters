@@ -1,7 +1,12 @@
 * { margin: 0; padding: 0; }
-
 img { display: inline-block; max-width: 100%; }
 
-#posters { display: rid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));}
+:root {
+    --gap: 1em;
+}
+
+
+
+#posters { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--gap); padding: var(--gap); }
 #posters .poster {}
 #posters .poster img { aspect-ratio: 1/1; }
