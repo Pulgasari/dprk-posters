@@ -9,4 +9,4 @@ body { background: #202020; color: #DFDFDF; }
 
 #posters { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--gap); padding: var(--gap); }
 #posters .poster {}
-#posters .poster img { aspect-ratio: 1/1; object-fit: cover; }
+#posters .poster img { aspect-ratio: 1/1; object-fit: cover; border-radius: 1em; box-shadow: 0 0 5px #111; }
