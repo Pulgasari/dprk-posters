@@ -4,7 +4,7 @@ function closePosterViews(){
   document.querySelectorAll('.posterView').forEach( el => {  el.outerHTML = '' } );
 
 }
-function openPosterView(id){
+function openPosterView( poster ){
 
   // Close All Open PosterViews
   closePosterViews();
@@ -48,7 +48,7 @@ const container = document.getElementById('posters');
 posters.forEach( poster => {
 
     const html = `<div class='poster' id="poster_${poster.id}">
-                      <img src="img/posters/${poster.id}.jpg" onclick="openPosterView(${poster.id})" />
+                      <img src="img/posters/${poster.id}.jpg" onclick="openPosterView(${poster})" />
                   </div>`;
     container.insertAdjacentHTML( 'beforeend', html );
 
