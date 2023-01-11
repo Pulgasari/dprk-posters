@@ -1,27 +1,3 @@
-function closePosterViews(){
-
-  // Close All Open PosterViews
-  document.querySelectorAll('.posterView').forEach( el => {  el.outerHTML = '' } );
-
-}
-function openPosterView( poster ){
-
-  // Close All Open PosterViews
-  closePosterViews();
-
-  //
-  const container = document.body;
-  const html = `<div class='posterView' id="posterView_${poster.id}">
-                    <div>
-                      <img src="img/posters/${poster.id}.jpg" />
-                    </div>
-                </div>`;
-  container.insertAdjacentHTML( 'beforeend', html );
-
-}
-
-
-
 let posters = [
     { id: '1056604494', title: '', year: '' },
     { id: '1056604549', title: '', year: '2017' },
@@ -40,6 +16,31 @@ let posters = [
     { id: '9997874534', title: '', year: '' },
 ];
 
+function closePosterViews(){
+
+  // Close All Open PosterViews
+  document.querySelectorAll('.posterView').forEach( el => {  el.outerHTML = '' } );
+
+}
+function openPosterView( id ){
+
+  // Close All Open PosterViews
+  closePosterViews();
+
+  // Get PosterData
+  const poster = posters.find( p => p.id === id );
+
+  //
+  const container = document.body;
+  const html = `<div class='posterView' id="posterView_${poster.id}">
+                    <div>
+                      <img src="img/posters/${poster.id}.jpg" />
+                    </div>
+                </div>`;
+  container.insertAdjacentHTML( 'beforeend', html );
+
+}
+
 
 // Apply Posters to Document
 
@@ -48,7 +49,7 @@ const container = document.getElementById('posters');
 posters.forEach( poster => {
 
     const html = `<div class='poster' id="poster_${poster.id}">
-                      <img src="img/posters/${poster.id}.jpg" onclick="openPosterView(${poster})" />
+                      <img src="img/posters/${poster.id}.jpg" onclick="openPosterView(${poster.id})" />
                   </div>`;
     container.insertAdjacentHTML( 'beforeend', html );
 
