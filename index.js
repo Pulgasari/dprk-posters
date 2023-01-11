@@ -16,7 +16,7 @@ let posters = [
     { id: '9997874534', title: '', year: '' },
 ];
 
-function closePosterViews(){
+function closeAllPosterViews(){
 
   // Close All Open PosterViews
   document.querySelectorAll('.posterView').forEach( el => {  el.outerHTML = '' } );
@@ -25,7 +25,7 @@ function closePosterViews(){
 function openPosterView( id ){
 
   // Close All Open PosterViews
-  closePosterViews();
+  closeAllPosterViews();
 
   // Get PosterData
   const poster = posters.find( p => p.id === id );
