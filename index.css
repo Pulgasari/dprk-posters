@@ -1,0 +1,7 @@
+* { margin: 0; padding: 0; }
+
+img { display: inline-block; max-width: 100%; }
+
+#posters { display: rid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));}
+#posters .poster {}
+#posters .poster img { aspect-ratio: 1/1; }

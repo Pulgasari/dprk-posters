@@ -10,10 +10,9 @@ const container = document.getElementById('posters');
 
 posters.forEach( poster => {
 
-    const html = 
-    `<div class='poster' id="poster_${poster.id}">
-        <img src="img/posters/${poster.id}.jpg" />
-    </div>`;
+    const html = `<div class='poster' id="poster_${poster.id}">
+                      <img src="img/posters/${poster.id}.jpg" />
+                  </div>`;
     container.insertAdjacentHTML( 'beforeend', html );
 
 });
