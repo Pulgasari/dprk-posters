@@ -35,7 +35,7 @@ function openPosterView( id ){
   const html = `<div class='posterView' id="posterView_${poster.id}">
                     <div>
                       <img src="img/posters/${poster.id}.jpg" />
-                      <div class='close'>X</div>
+                      <div class='close' onclick='closeAllPosterViews()'>X</div>
                     </div>
                 </div>`;
   container.insertAdjacentHTML( 'beforeend', html );

@@ -14,4 +14,4 @@ body { background: #202020; color: #DFDFDF; }
 .posterView       { background: #000E; text-align: center; display: flex; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 999; }
 .posterView > div { background: #FFF; margin: auto; max-width: 800px; }
 
-.posterView > .close { position: absolute; top: 20px; right: 20px; }
+.posterView .close { position: absolute; top: var(--gap); right: var(--gap); }
