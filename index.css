@@ -15,6 +15,6 @@ body { background: #202020; color: #DFDFDF; }
 #posters .poster img { aspect-ratio: 1/1; object-fit: cover; border-radius: 1em; box-shadow: 0 0 5px #111; }
 
 .posterView       { background: #000E; text-align: center; display: flex; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 999; }
-.posterView > div { background: #FFF; margin: auto; max-width: 800px; }
+.posterView > div { background: #FFF; margin: auto; max-height: 100 vh; max-width: 800px; }
 
 .posterView .close { position: absolute; top: var(--gap); right: var(--gap); }
