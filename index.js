@@ -50,7 +50,7 @@ const container = document.getElementById('posters');
 posters.forEach( poster => {
 
     const html = `<div class='poster' id="poster_${poster.id}">
-                      <img src="img/posters/${poster.id}.jpg" onclick="openPosterView('${poster.id}')" />
+                      <img src="img/posters/${poster.id}.jpg" onclick="openPosterView('${poster.id}')" loading="lazy" />
                   </div>`;
     container.insertAdjacentHTML( 'beforeend', html );
 
